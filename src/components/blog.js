@@ -12,8 +12,9 @@ export default class Blog extends  React.Component {
        }
    }
    
-   
-   
+    
+
+
    
    
     render (){
@@ -21,7 +22,7 @@ export default class Blog extends  React.Component {
             <div>
                 <h1> Blog-o-sphere</h1>
                  <div>
-                  <form action="">
+                  <form onSubmit = {this.handleSubmit}>
                        <label htmlFor="">
                            Title:
                            <input value={this.state.title}  type="text" name="title"/>    
